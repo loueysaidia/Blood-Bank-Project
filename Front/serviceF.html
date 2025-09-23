@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="serviceF.css">
+  
+    <title>SERVICES DE LA BANQUE</title>
+</head>
+<body>
+    <div class="container-fonctionnalites">
+        <ul>
+            <li>
+                <div class="tableau" id="tableau">
+                    <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+  <title>Dashboard</title>
+  <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zM13 21h8V11h-8v10zM13 3v6h8V3h-8z"/>
+</svg>
+</div>
+                     <div class="paragraphe">Tableau de bord</div>
+                </div>
+            </li>
+            <li> 
+                <div class="statistiques" id="statistiques">
+                    <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+  <title>Statistics</title>
+  <path d="M5 9h2v10H5zM10 3h2v16h-2zM15 13h2v6h-2zM20 7h2v12h-2z"/>
+</svg>
+</div>
+                    <div class="paragraphe">Statistiques</div>
+                </div>
+            </li>
+            <li>
+                <div class="cree-compte" id="cree-compte">
+                    <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+  <title>Create account</title>
+  <path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zM6 14c-2.67 0-8 1.34-8 4v2h20v-2c0-2.66-5.33-4-8-4H6zM20 8v2h2v2h-2v2h-2v-2h-2V10h2V8h2z"/>
+</svg>
+</div>
+                    <div class="paragraphe">Créer des compte</div>
+                </div>
+            </li>
+            <li>
+                <div class="gestion-compte" id="gestion-compte">
+                    <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+  <title>Manage accounts</title>
+  <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zM6 8C7.1 8 8 7.1 8 6S7.1 4 6 4 4 4.9 4 6s.9 2 2 2zm10 2c-2.33 0-7 1.17-7 3.5V16h14v-1.5c0-2.33-4.67-3.5-7-3.5zM6 10c-2.67 0-8 1.34-8 4v2h8v-2c0-1.1.9-2 2-2h0C8 12.34 6.67 12 6 12z"/>
+</svg>
+</div>
+                    <div class="paragraphe">Gérer les compte</div>
+                </div>
+            </li>
+            <li>
+                <div class="setting" id="setting">
+                    <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+  <title>Paramètres</title>
+  <path d="M19.14,12.94c0.04-0.31,0.06-0.63,0.06-0.94s-0.02-0.63-0.06-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.62l-1.92-3.32
+    c-0.12-0.21-0.37-0.3-0.6-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94l-0.36-2.54C14.41,2.18,14.21,2,13.97,2h-3.94
+    c-0.24,0-0.44,0.18-0.47,0.42L9.21,4.96C8.62,5.2,8.09,5.52,7.59,5.9L5.2,4.94c-0.23-0.09-0.49,0.01-0.6,0.22L2.68,8.48
+    c-0.12,0.21-0.07,0.48,0.12,0.62l2.03,1.58C4.79,11.37,4.76,11.68,4.76,12s0.02,0.63,0.06,0.94l-2.03,1.58
+    c-0.18,0.14-0.23,0.41-0.12,0.62l1.92,3.32c0.12,0.21,0.37,0.3,0.6,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54
+    c0.03,0.24,0.23,0.42,0.47,0.42h3.94c0.24,0,0.44-0.18,0.47-0.42l0.36-2.54c0.59-0.24,1.12-0.56,1.62-0.94l2.39,0.96
+    c0.23,0.09,0.49-0.01,0.6-0.22l1.92-3.32c0.12-0.21,0.07-0.48-0.12-0.62L19.14,12.94z M12,15.6c-1.99,0-3.6-1.61-3.6-3.6
+    s1.61-3.6,3.6-3.6s3.6,1.61,3.6,3.6S13.99,15.6,12,15.6z"/>
+</svg>
+
+</div>
+                    <div class="paragraphe">Paramètres</div>
+                </div>
+            
+        </ul>
+    </div>
+    <div class="setting-container" id="setting-container" style="display: none; ">
+           <button id="closeSettingBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+    <title>Close</title>
+    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+</svg></button>
+        
+        <div class="setting-header">
+            <h2 style="color: black;">Paramètres</h2>  
+        </div>
+
+        <div class="image-upload">
+            <img id="profileImg" src="" alt="" class="profile-img">
+        </div>
+
+           <input type="file" id="uploadBtn" class="uploadBtn" accept="image/*">
+        <div class="form">
+            <label>Nom d'utilisateur</label>
+            <span class="name-user" id="NameUser">loueysai</span><hr>
+            <label>Email</label>
+            <span class="email-user" id="emai">lou45@gmail.com</span><hr>
+            <label>Numéro de téléphone</label>
+            <span class="phone-user" id="phone-user">2373812922</span><hr>
+    </div>
+        <button class="deconnecter" id="deconnecter">Se déconnecter</button>
+    </div>
+     <div class="tableau-container" id="tableau-container" style="display:none ;">
+        <h2>Tableau de bord</h2>
+        <div class="stats">
+            <div class="stat">
+                <h3>Total des poches</h3>
+                <p id="totalAccounts">0</p>
+            </div>
+            <div class="stat">
+                <h3>Total des distributions</h3>
+                <p id="totalTransactions">0</p>
+            </div>
+            <div class="stat">
+                <h3>Total des utilisateurs</h3>
+                <p id="totalUsers">0</p>
+            </div>
+        </div>
+         <div class="alerts">
+            <h3 id="Alertes">Les Alertes</h3>    
+            <!-- Les alertes seront insérées ici dynamiquement -->
+                      
+                     
+        </div>
+        
+    </div>
+    
+     <div class="statistiques-container" id="statistiques-container" style="display: none;">
+        <h2>Statistiques</h2>
+        <div class="stats-boxes">
+            <span class="first">
+            <div class="box1">Total poches de sang<br><br>🩸<strong class="totalPoCheSang" id="totalPoCheSang">0</strong></div>
+            <div class="box2">Total distribution<br><br>🩸<strong class="totalDistribution" id="totalDistribution">0</strong></div>
+            <div class="box3">Total poches expiré<br><br>🩸<strong class="totalExpire" id="totalExpire">0</strong></div>
+        </span>
+        <span class="second">
+            <div class="box4">Total CPS poches<br><br>🩸<strong class="totalCps" id="totalCps">0</strong></div>
+            <div class="box5">Total CG poches<br><br>🩸<strong class="totalCg" id="totalCg">0</strong></div>
+            <div class="box6">Total PFC poches<br><br>🩸<strong class="totalPfc" id="totalPfc">0</strong></div>
+        </span>
+          </div>
+    </div>
+
+    <div class="cree-comptes-conatiner" id="cree-comptes-container" style="display: none;">
+        <h2>Créer des compte</h2>
+        <div class="form-container">
+            <div class="form-group">
+              <label>Nom</label>
+              <input type="text" placeholder="Entrer le Nom"/>
+              <span class="icon-right"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <title>Person</title>
+  <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+        d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+  <circle cx="12" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+            </div>
+            <div class="form-group">
+              <label>Prénom</label>
+              <input type="text" placeholder="Entrer le prénom"/>
+              <span class="icon-right"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <title>Person</title>
+  <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+        d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+  <circle cx="12" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+            </div>
+            <div class="form-group">
+              <label>Nom d’utilisateur</label>
+              <input type="text" placeholder="Entrer le nom d’utilisateur"/>
+              <span class="icon-right"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <title>Person</title>
+  <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+        d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+  <circle cx="12" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="Entrer l'email"/>
+              <span class="icon-right">
+<svg class="icon" width="24" height="24" viewBox="0 0 24 24" 
+     aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <title>Email</title>
+  <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+        d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/>
+  <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+        d="m22 6-10 7L2 6"/>
+</svg></span>
+            </div>
+            <div class="form-group">
+              <label>Mot de passe</label>
+              <input type="password" placeholder="Entrer le mot de passe"/>
+              <span class="icon-right"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <title>Password</title>
+  <rect x="3" y="11" width="18" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7 11V8a5 5 0 0 1 10 0v3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+            </div>
+            <button class="creer">S'inscrire</button>
+          </div>
+    </div>
+
+        <div class="gestion-comptes-container" id="gestion-comptes-container" style="display: none;">
+            <h2>Gérer les compte</h2>
+            <div class="search-bar">
+                 <input type="text" id="searchInput" placeholder="Rechercher nom d’utilisateur ou numéro de téléphone">
+            </div>
+              <section class="TablesCompte" id="TablesCompte">
+            <table>
+                <thead>
+                  <tr>
+                    <th>Biologiste ID</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Nom d’utilisateur</th>
+                    <th>Email</th>
+                    <th>Telephone</th>
+                    <th>Actif</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="compte-biologiste">
+                    <!-- Les lignes de données seront insérées ici dynamiquement -->
+
+                   
+                </tbody>
+              </table>
+        </section>
+        </div>
+        <div class="modificatin" id="modification">
+            <span id="message"></span>
+            <button id="closeBtn">Fermer</button>
+        </div>
+
+    <script src="serviceF.js">
+    </script>
+</body>
+</html>
