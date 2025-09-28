@@ -145,6 +145,5 @@ const closeSetting = document.getElementById("closeSetting");
 const settingContainer = document.getElementById("setting-container");
 
 closeSettingBtn.addEventListener("click", function() {
-  settingContainer.style.animation = "transReverce 1s ease-in-out forwards";
     settingContainer.style.display = "none";
 });
