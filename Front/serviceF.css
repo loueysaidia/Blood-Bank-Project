@@ -1,15 +1,14 @@
 
 
 body{
-    background: linear-gradient(to bottom, #a71c1c 30%, #ac9898 0%);
+    background: linear-gradient(to bottom, #b00 45%, #ac9898 0%);
      background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px; 
-    height: 100%;
+    height: 100vh;
     box-sizing: border-box;
-    position: relative;
 
 }
 
@@ -24,16 +23,19 @@ body{
     margin-top: 2%;
     margin-bottom: 2%;
     margin-left: 2%;
-    animation: translateY 1s ease-in-out forwards;
-    
+    animation: translateY 0.5s ease-in-out forwards;
+   
+
 }
 li{
     display: flex;
     justify-content: start;
     align-items: center;
     cursor: pointer;
- list-style: none;
+    list-style: none;
+    height: auto;
 }
+
 
 .tableau{
     width: 100%;
@@ -41,7 +43,6 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #ccc;
     border-radius: 8px;
     padding: 10px;
     background-color: transparent;
@@ -56,7 +57,6 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #ccc;
     border-radius: 8px;
     padding: 10px;
     background-color: transparent;
@@ -72,7 +72,6 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #ccc;
     border-radius: 8px;
     padding: 10px;
     background-color: transparent;
@@ -88,7 +87,6 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #ccc;
     border-radius: 8px;
     padding: 10px;
     background-color: transparent;
@@ -104,7 +102,6 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #ccc;
     border-radius: 8px;
     padding: 10px;
     background-color: transparent;
@@ -116,7 +113,6 @@ li{
   .paragraphe{
     font-size: 14px;
     margin-top: 8px;
-    color: black;
     font-weight: bold;
     text-align: center;
     width: 100%;
@@ -159,7 +155,7 @@ li{
     justify-content: start;
     transform: translateX(-500px);
     position: absolute;
-   top: 20px;
+    top: 100px;
     left: 0px;
 
 }
@@ -180,7 +176,7 @@ li{
     }
     to {
       opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0deg);
     }
   }
 
@@ -207,6 +203,8 @@ li{
     position: relative;
     height: 100vh;
     max-height: 800px;
+position: relative; 
+z-index: 0;
 }
 h2{
     color: white;
@@ -222,7 +220,22 @@ h2{
         opacity: 1;
     }
 }
-
+  #barChart {
+      max-width: 100% !important;
+      width: 800px !important;
+      height: 550px !important;
+      margin: 20px;
+      background: #fff;
+      padding: 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .part2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 20px;
+    }
 
 .stats{
     display: flex;
@@ -231,12 +244,14 @@ h2{
     margin-top: 20px;
 }
 .stat{
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    background-color: #aa1818;
+    box-shadow:  0 4px 8px rgba(0,0,0,0.1);
+    color: white;
     padding: 20px;
     text-align: center;
-    width: 30%;
+    border-radius: 8px;
+    width: 300px;
+    height: 100px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 80px;
 }
@@ -262,11 +277,16 @@ h2{
     border-radius: 8px;
     padding: 20px;
     text-align: center;
-    width: 450px;
+    width: 500px;
     height: 400px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 80px;
     overflow-y: scroll;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-right: 40px;
 }
 
 .statistiques-container{
@@ -280,6 +300,7 @@ h2{
     height: 100vh;
     max-height: 800px;
     justify-content: start;
+    z-index: 0;
 }
 .box1 , .box2, .box3 , .box4, .box5 , .box6{
     background-color: #f9f9f9;
@@ -287,15 +308,20 @@ h2{
     border-radius: 8px;
     padding: 20px;
     text-align: center;
-    width: 30%;
+    width: 250px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 80px;
     display: inline-block;
     margin-right: 20px;
     margin-top: 55px;
+    height: 100px;
 }
-.box1, .box3, .box5{
-    margin-right: 80px;  ;
+.first, .second{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
 }
 .cree-comptes-conatiner{
      margin-left: 270px; 
@@ -308,6 +334,7 @@ h2{
     height: 100vh;
     max-height: 800px;
     justify-content: start;
+    z-index: 0;
 }
 .form-group {
     margin-bottom: 25px;
@@ -327,6 +354,7 @@ h2{
   .form-group label {
     font-weight: bold;
     display: block;
+    color: white;
     margin-bottom: 5px;
     text-align: start;
     margin-left: 0;
@@ -369,7 +397,8 @@ h2{
     height: 100vh;
     max-height: 800px;
     justify-content: start;
-    overflow-y: scroll;
+    overflow-y: auto;
+    z-index: 0;
 }
  table {
     max-width: 100%;
@@ -405,6 +434,11 @@ h2{
     margin-bottom: 50px;
     margin-left: 40px;
     text-align: start;
+  }
+ td button{
+    border: 1px solid #84150C;
+    cursor: pointer;
+    font-size: 18px;
   }
   .search-bar input {
     width: 400px;
@@ -449,6 +483,7 @@ h2{
     right: 10px;
     z-index: 1001;
     background: #a71c1c;
+    color: white;
     border: 1px solid #84150C;
     border-radius: 5px;
     cursor: pointer;
@@ -456,9 +491,11 @@ h2{
   }
   #closeSettingBtn:hover{
     background-color: #a32a2a;
-    color: #84150C;
+    color: white;
   }
+
   .form label{
+    
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
@@ -488,3 +525,264 @@ h2{
     border: 1px solid #84150C;
     border-radius: 10px;
 }
+.deconnecter:hover{
+    background-color: #a2150C;
+    cursor: pointer;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+    margin-bottom: 0px;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10px;
+    margin-right: 10px;
+   
+
+}
+.profile-header{
+ width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ccc;
+  border-radius: 50%;      
+  overflow: hidden; 
+  margin-left: 25px;
+  margin-right: 25px;
+   background-color: transparent;
+   z-index:100 ;
+}
+.notification {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+
+    .notification svg {
+      width: 100%;
+      height: 100%;
+      fill: white; 
+    }
+
+    .badge {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      background: red;
+      color: white;
+      font-size: 12px;
+      padding: 4px 6px;
+      border-radius: 50%;
+      font-weight: bold;
+    }
+    .nots {
+      display: none; 
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 250px;
+      max-height: 300px;
+      background: white;
+      color: #333;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      overflow-y: auto;
+      z-index: 100000;
+      animation: TranslateNots 0.3s ease-in-out forwards;
+      right: 100px;
+      top: 90px;
+    }
+    .nots ul {
+      position: relative;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      z-index: 1000;
+    }
+
+    .nots li {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      font-size: 13px;
+      text-align: start;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      color: #a71c1c;
+      z-index: 10000;
+    }
+
+    .nots li:last-child {
+      border-bottom: none;
+    }
+
+    .btn-show-more {
+    background-color: #84150C;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    max-width: 150px;
+   margin-left: 55px;
+    border-radius: 5px;
+     
+  }
+    @keyframes TranslateNots {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .chart-container {
+      width: 100px;
+      height: 40px;
+      margin-left: 100px;
+    }
+
+    .historique {
+      position: absolute;
+      left: 10px;
+      width: 900px;
+      height: 800px;
+      background: white;
+      color: #333;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 100;
+      animation: TranslateHist 1.5s ease-in-out forwards;
+      padding: 10px;
+    }
+   
+  @keyframes TranslateHist{
+   from {
+      opacity: 0;
+        transform: translateY(-200px);
+    }
+    to {
+      opacity: 1;
+        transform: translateY(0deg);
+    }
+  }
+    .historique h2 {
+      margin-top: 0;
+      color: #a71c1c;
+      text-align: center;
+    }
+    #annees-list{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 20px;
+      overflow-x: auto;
+      gap: 20px;  
+      
+    }
+
+    #annees-list li {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 30px;
+      background-color: #b00;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      flex: 0 0 auto; 
+
+    }
+
+
+
+      #annees-list li.active {
+    background: #ff4b4b;
+    font-weight: bold;
+  }
+  #annees-list li:hover {
+    background-color: #ff4b4b;
+    transform: scale(1.05);
+  }
+
+  /* Table des dons */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+    margin-top: 20px;
+  }
+
+  th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+  }
+
+  th {
+    background: #a02222;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+
+  tr:hover {
+    background: #222;
+  }
+
+ #closeHistBtn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1001;
+    background: #a71c1c;
+    color: white;
+    border: 1px solid #84150C;
+    border-radius: 5px;
+    cursor: pointer;
+
+  }
+  #closeHistBtn:hover{
+    background-color: #a32a2a;
+    color: white;
+  }
+
+
+ .search-bar button{
+  background-color: white;
+  color: #b00;
+  width: 100px;
+  height: 30px;
+  border: 1px solid #b00;
+  border-radius: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+ }
+  .search-bar button:hover{
+    background-color: #84150C;
+    color: white;
+    /* transform: scale(1.2); */
+      cursor: pointer;
+  }
